@@ -15,11 +15,27 @@ Object Detection application right in your browser.
 Serving YOLOv5 in browser using onnxruntime-web with `wasm` backend.
 
 ## Setup
+### node.js 
+  * You need node.js 18.12.1, which you can download from nodejs.org
+### onnx runtime for web 
+  * You should install onnxruntime-web using npm 
+```
+npm install onnxruntime-web 
+```
+  * If you are to install onnx runtime node.js binding, you should install 
+```
+npm install onnxruntime-node
+```
+### react native 
+  * Since the codes are implememented with react native, you should install 
+```
+npm install onnxruntime-react-native
+```
 
 ```bash
 git clone https://github.com/Hyuto/yolov5-onnxruntime-web.git
 cd yolov5-onnxruntime-web
-yarn install # Install dependencies
+yarn install # Install dependencies refering to package.json 
 ```
 
 ## Scripts
