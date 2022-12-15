@@ -21,7 +21,7 @@ const App = () => {
   // wait until opencv.js initialized
   cv["onRuntimeInitialized"] = async () => {
     // create session
-    setLoading("Loading YOLOv5 model...");
+    setLoading("Loading ID Detection model...");
     const yolov5 = await InferenceSession.create(`${process.env.PUBLIC_URL}/model/${modelName}`);
 
     // warmup model
@@ -41,7 +41,7 @@ const App = () => {
     <div className="App">
       {loading && <Loader>{loading}</Loader>}
       <div className="header">
-        <h1>YOLOv5 Object Detection App</h1>
+        <h1>Personal ID / License Detection App</h1>
         <p>
           YOLOv5 object detection application live on browser powered by{" "}
           <code>onnxruntime-web</code>
