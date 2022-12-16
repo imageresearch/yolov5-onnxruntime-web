@@ -44,6 +44,16 @@ yarn install # Install dependencies refering to package.json
 yarn start # Start dev server
 yarn build # Build for productions
 ```
+## Error Work-Around 
+  * If you got such an error as digital envelope routines::unsupported, You can fix as follow 
+### For Linux and MacOS
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+### For Windows 
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+```
 
 ## Model
 
